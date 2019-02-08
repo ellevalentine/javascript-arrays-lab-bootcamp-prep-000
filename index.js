@@ -28,7 +28,9 @@ function appendKitten(name){ return [...kittens, "Broom" ];}
 function prependKitten(name){ return [ "Arnold", ...kittens ];}
   
 
-function removeLastKitten(kittens) { return kittens.splice(0, kittens.length-1) }
+function removeLastKitten(kittens) { var newArray = []
+ var kittens = kittens.concat(newArray);return kittens.splice(0, kittens.length-1) }
 
-function removeFirstKitten(kittens) { return kittens.slice(1) }
+function removeFirstKitten(kittens) {var newArray = []
+ var kittens = kittens.concat(newArray); return kittens.slice(1) }
 
