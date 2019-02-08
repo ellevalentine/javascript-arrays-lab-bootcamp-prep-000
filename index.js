@@ -1,3 +1,33 @@
-var kittens = [] //define your array here
+var kittens = ["Milo", "Otis", "Garfield"] 
 
-// Add your functions and code here
+
+// Prepend this is to add something to the beginning of something 
+
+function destructivelyPrependKitten(name){
+ kittens.unshift(name)
+ return kittens }
+
+ // adding something to the end = append
+
+
+function destructivelyAppendKitten(name){
+ kittens.push(name)
+ return kittens }
+
+function destructivelyRemoveLastKitten(name){
+ kittens.pop(1)
+ return kittens }
+ 
+ function destructivelyRemoveFirstKitten(name){
+ kittens.shift(1)
+ return kittens }
+ 
+ 
+function appendKitten(name){ return [...kittens, "Broom" ];}
+ 
+function prependKitten(name){ return [ "Arnold", ...kittens ];}
+  
+function removeLastKitten(kittens){ return kittens=kittens.slice(0, kittens.length - 1);}
+
+function removeFirstKitten(kittens){ return kittens=kittens.slice(1);}
+
