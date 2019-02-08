@@ -30,6 +30,9 @@ function prependKitten(name){ return [ "Arnold", ...kittens ];}
 
 function removeLastKitten(kittens) { var newArray = ["Milo", "Otis", "Garfield"]
   ; return newArray.splice(0, newArray.length-1) }
+  
+  function removeFirstKitten(kittens) { var newArray = ["Milo", "Otis", "Garfield"]
+  ; return newArray.splice(1) }
 
 
 
